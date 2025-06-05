@@ -5,7 +5,7 @@ export const Vista = {
     ventas.forEach((v, i) => {
       const item = document.createElement("li");
       item.innerHTML = `<strong>${v.producto}</strong> - ${v.cantidad} x $${v.precio.toFixed(2)}
-  <br><small>${v.descripcion || ''}</small>`;
+      <br><small>${v.descripcion || ''}</small>`;
 
       const btn = document.createElement("button");
       btn.textContent = "Eliminar";

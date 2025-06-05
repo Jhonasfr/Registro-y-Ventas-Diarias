@@ -27,17 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", agregarVenta);
   actualizarVista();
 
-  async function login(username, password) {
-  const res = await fetch("http://localhost:8000/usuarios/login/", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    credentials: "include", // IMPORTANTE para mantener sesión
-    body: JSON.stringify({ username, password }),
   });
 
-  const data = await res.json();
-  if (res.ok) alert("Sesión iniciada");
-  else alert(data.error);
-}
 
-});
