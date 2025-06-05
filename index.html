@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Ventas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Registro Diario de Ventas</h1>
+    <form id="venta-form">
+      <input type="text" id="producto" placeholder="Producto" required />
+      <input type="number" id="cantidad" placeholder="Cantidad" required />
+      <input type="text" id="descripcion" placeholder="Descripción o nota" />
+      <input type="number" id="precio" placeholder="Precio" required />
+      <button type="submit">Registrar Venta</button>
+    </form>
+    <section>
+      <h2>Ventas del día</h2>
+      <ul id="lista-ventas"></ul>
+      <p>Total vendido: $<span id="total"></span></p>
+    </section>
+  </main>
+
+  <script type="module" src="js/controller.js"></script>
+</body>
+</html>
